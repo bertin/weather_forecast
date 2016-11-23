@@ -1,6 +1,6 @@
 # weather_forecast
 
-Project contains: React + avansert Redux + + axios + React Router + Redux Forms
+React + Redux + axios
 
 
 ###Getting Started###
