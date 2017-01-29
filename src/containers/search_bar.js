@@ -36,20 +36,21 @@ class SearchBar extends Component {
                   className="btn btn-secondary"
                   value={this.state.country}
                   onChange={this.onCountryChange}>
-                   <option value="no">Norge</option>
+                   <option value="no">Norway</option>
                    <option value="us">USA</option>
-                   <option value="kr">Sørkorea</option>
+                   <option value="pl">Poland</option>
+                   <option value="kr">South Korea</option>
                    <option value="gb">England</option>
-                   <option value="es">Spania</option>
+                   <option value="es">Spain</option>
                </select>
             </span>
             <input
-               placeholder="Få et femdagersvarsel for en by i valgfritt land"
+               placeholder="Get a five day weather forecast for your favourite city in a chosen country"
                className="form-control"
                value={this.state.term}
                onChange={this.onInputChange} />
             <span className="input-group-btn">
-               <button type="submit" className="btn btn-secondary">Søk</button>
+               <button type="submit" className="btn btn-secondary">Search</button>
             </span>
          </form>
       );

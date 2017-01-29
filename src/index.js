@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import ReduxPromise from 'redux-promise';     // Import the redux-promise middleware, the package installed by "npm install --save redux-promise"
+import ReduxPromise from 'redux-promise';
 
 import App from './components/app';
 import reducers from './reducers';
@@ -12,6 +12,7 @@ const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <App />
+     <App />
   </Provider>
-  , document.querySelector('.container'));
+  , document.querySelector('.container')
+);
